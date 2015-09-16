@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Resolution-dependent behavior of subgrid-scale vertical transport in the Zhang-McFarlane convection parameterization</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style>
+			body { 
+				font-family: sans-serif; 
+				font-size: 16px; 
+				line-height: 1.7; 
+				text-rendering: optimizeLegibility; 
+				max-width: 600px;
+				margin-top: 40px;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 40px;
+				-webkit-font-smoothing:antialiased;
+			}
+			h1 { 
+				font-size: 24px; 
+				line-height: 28px; 
+				font-weight: 700; 
+				margin-bottom: 5px;
+				text-decoration: none; 
+				border: none; 
+				color: #333;
+			}
+			h1 a {
+				border-bottom: none;
+			}
+			h2 {
+				font-size: 18px;
+				margin-top: 30px;
+				margin-bottom: 0px;
+			}
+			p {
+				color: #333;
+			}
+			a { 
+				color: inherit; 
+				text-decoration: none; 
+				border-bottom: 
+				1px dotted; 
+			}
+			a:hover {
+				border-bottom: 1px solid; 
+			}
+			img { 
+				page-break-inside: avoid; 
+				max-width: 600px;
+			}
+			.source {
+				margin-bottom: 20px;
+				font-size: 12px;
+				color: #777;
+			}
+			p.source {
+				margin-top: 0px;
+			}
+			.source a {
+				border-bottom: none;
+			}
+			.source a:hover {
+				border-bottom: 1px solid #B4B4B4;
+				color: #777;
+			}
+			.bottom-links {
+				border-top: 1px solid #C2C2C2;
+				margin-top: 40px;
+				padding-top: 10px;
+				color: #777;
+			}
+		</style>
+<!-- Article JSON data
+<script>
+var article = {"id":"PMVoQnJZalDRgR3wUF6HYD8DcqnZv1u1nY1hT1x46Og=_14c217cac06:4f92851:24a98465","fingerprint":"1d771f2c","originId":"http://onlinelibrary.wiley.com/resolve/doi?DOI=10.1002%2F2014MS000356","content":{"content":"<h3>Abstract</h3>\n<div><p>To better understand the behavior of quasi-equilibrium based convection parameterizations at higher resolution, we use a diagnostic framework to examine the resolution-dependence of subgrid-scale vertical transport of moist static energy as parameterized by the Zhang-McFarlane convection parameterization (ZM). Grid-scale input to ZM is supplied by coarsening output from cloud resolving model (CRM) simulations onto sub-domains ranging in size from 8 × 8 to 256 × 256 km<sup>2</sup>. Then the ZM based parameterization of vertical transport of moist static energy for scales smaller than the sub-domain size (<img alt=\"image\" src=\"http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0001.png?v=1&amp;s=a376872145aa80f208ee874a34bb2922da640da8\">) are compared to those directly calculated from the CRM simulations (<img alt=\"image\" src=\"http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0002.png?v=1&amp;s=6291ab2723d7e78896e9fd0d81ac051ab9348995\">) for different sub-domain sizes. The ensemble mean <img alt=\"image\" src=\"http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0002.png?v=1&amp;s=6291ab2723d7e78896e9fd0d81ac051ab9348995\"> decreases by more than half as the sub-domain size decreases from 128 to 8 km across while <img alt=\"image\" src=\"http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0001.png?v=1&amp;s=a376872145aa80f208ee874a34bb2922da640da8\"> decreases with sub-domain size only for strong convection cases and increases for weaker cases. The resolution dependence of <img alt=\"image\" src=\"http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0001.png?v=1&amp;s=a376872145aa80f208ee874a34bb2922da640da8\"> is determined by the positive-definite tendency of grid-scale convective available potential energy (CAPE) in the convective quasi-equilibrium (QE) closure. Further analysis shows the tendency of actual grid-scale CAPE (before taking the positive definite value) and <img alt=\"image\" src=\"http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0002.png?v=1&amp;s=6291ab2723d7e78896e9fd0d81ac051ab9348995\"> behave very similarly as the sub-domain size changes because they are both tied to grid-scale advective tendencies. We can improve the resolution dependence of <img alt=\"image\" src=\"http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0001.png?v=1&amp;s=a376872145aa80f208ee874a34bb2922da640da8\"> significantly by averaging the grid-scale tendency of CAPE over an appropriately large area surrounding each sub-domain before taking its positive definite value. Even though the ensemble mean <img alt=\"image\" src=\"http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0002.png?v=1&amp;s=6291ab2723d7e78896e9fd0d81ac051ab9348995\"> decreases with increasing resolution, its variability increases dramatically. <img alt=\"image\" src=\"http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0001.png?v=1&amp;s=a376872145aa80f208ee874a34bb2922da640da8\"> cannot capture such increase in the variability, suggesting the need for stochastic treatment of convection at relatively high spatial resolution (8 or 16 km). This article is protected by copyright. All rights reserved.</p></div>","direction":"ltr"},"title":"Resolution-dependent behavior of subgrid-scale vertical transport in the Zhang-McFarlane convection parameterization","published":1426490772171,"crawled":1426490960902,"alternate":[{"href":"http://onlinelibrary.wiley.com/resolve/doi?DOI=10.1002%2F2014MS000356","type":"text/html"}],"author":"Heng Xiao, William I. Gustafson, Samson M. Hagos, Chien-Ming Wu, Hui Wan","origin":{"streamId":"feed/http://onlinelibrary.wiley.com/rss/journal/10.1002/(ISSN)1942-2466","title":"Journal of Advances in Modeling Earth Systems","htmlUrl":"http://onlinelibrary.wiley.com/resolve/doi?DOI=10.1002%2F%28ISSN%291942-2466"},"summary":{"content":"To better understand the behavior of quasi-equilibrium based convection parameterizations at higher resolution, we use a diagnostic framework to examine the resolution-dependence of subgrid-scale vertical transport of moist static energy as parameterized by the Zhang-McFarlane convection parameterization (ZM). Grid-scale input to ZM is supplied by coarsening output from cloud resolving model (CRM) simulations onto sub-domains ranging in size from 8 × 8 to 256 × 256 km2. Then the ZM based parameterization of vertical transport of moist static energy for scales smaller than the sub-domain size () are compared to those directly calculated from the CRM simulations () for different sub-domain sizes. The ensemble mean decreases by more than half as the sub-domain size decreases from 128 to 8 km across while decreases with sub-domain size only for strong convection cases and increases for weaker cases. The resolution dependence of is determined by the positive-definite tendency of grid-scale convective available potential energy (CAPE) in the convective quasi-equilibrium (QE) closure. Further analysis shows the tendency of actual grid-scale CAPE (before taking the positive definite value) and behave very similarly as the sub-domain size changes because they are both tied to grid-scale advective tendencies. We can improve the resolution dependence of significantly by averaging the grid-scale tendency of CAPE over an appropriately large area surrounding each sub-domain before taking its positive definite value. Even though the ensemble mean decreases with increasing resolution, its variability increases dramatically. cannot capture such increase in the variability, suggesting the need for stochastic treatment of convection at relatively high spatial resolution (8 or 16 km). This article is protected by copyright. All rights reserved.","direction":"ltr"}};
+</script>
+-->
+	</head>
+	<body>
+		<div class="article-header">
+			<h1><a target="_blank" href="http://onlinelibrary.wiley.com/resolve/doi?DOI=10.1002%2F2014MS000356">Resolution-dependent behavior of subgrid-scale vertical transport in the Zhang-McFarlane convection parameterization</a></h1>
+			<p class="source"><a target="_blank" href="http://onlinelibrary.wiley.com/resolve/doi?DOI=10.1002%2F%28ISSN%291942-2466">JAMES</a>
+ by Heng Xiao, William I. Gustafson, Samson M. Hagos, Chien-Ming Wu, Hui Wan, 2015-03-16
+            </p>
+		</div>
+		<div id="article-body" class="article-body instapaper_body entry-content">
+		<h3>Abstract</h3>
+<div><p>To better understand the behavior of quasi-equilibrium based convection parameterizations at higher resolution, we use a diagnostic framework to examine the resolution-dependence of subgrid-scale vertical transport of moist static energy as parameterized by the Zhang-McFarlane convection parameterization (ZM). Grid-scale input to ZM is supplied by coarsening output from cloud resolving model (CRM) simulations onto sub-domains ranging in size from 8 × 8 to 256 × 256 km<sup>2</sup>. Then the ZM based parameterization of vertical transport of moist static energy for scales smaller than the sub-domain size (<img alt="image" src="http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0001.png?v=1&amp;s=a376872145aa80f208ee874a34bb2922da640da8">) are compared to those directly calculated from the CRM simulations (<img alt="image" src="http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0002.png?v=1&amp;s=6291ab2723d7e78896e9fd0d81ac051ab9348995">) for different sub-domain sizes. The ensemble mean <img alt="image" src="http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0002.png?v=1&amp;s=6291ab2723d7e78896e9fd0d81ac051ab9348995"> decreases by more than half as the sub-domain size decreases from 128 to 8 km across while <img alt="image" src="http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0001.png?v=1&amp;s=a376872145aa80f208ee874a34bb2922da640da8"> decreases with sub-domain size only for strong convection cases and increases for weaker cases. The resolution dependence of <img alt="image" src="http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0001.png?v=1&amp;s=a376872145aa80f208ee874a34bb2922da640da8"> is determined by the positive-definite tendency of grid-scale convective available potential energy (CAPE) in the convective quasi-equilibrium (QE) closure. Further analysis shows the tendency of actual grid-scale CAPE (before taking the positive definite value) and <img alt="image" src="http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0002.png?v=1&amp;s=6291ab2723d7e78896e9fd0d81ac051ab9348995"> behave very similarly as the sub-domain size changes because they are both tied to grid-scale advective tendencies. We can improve the resolution dependence of <img alt="image" src="http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0001.png?v=1&amp;s=a376872145aa80f208ee874a34bb2922da640da8"> significantly by averaging the grid-scale tendency of CAPE over an appropriately large area surrounding each sub-domain before taking its positive definite value. Even though the ensemble mean <img alt="image" src="http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0002.png?v=1&amp;s=6291ab2723d7e78896e9fd0d81ac051ab9348995"> decreases with increasing resolution, its variability increases dramatically. <img alt="image" src="http://onlinelibrary.wiley.com/store/10.1002/2014MS000356/asset/image_n/jame20160-gra-0001.png?v=1&amp;s=a376872145aa80f208ee874a34bb2922da640da8"> cannot capture such increase in the variability, suggesting the need for stochastic treatment of convection at relatively high spatial resolution (8 or 16 km). This article is protected by copyright. All rights reserved.</p></div>
+		</div>
+		<div class="bottom-links">
+			Saved from <a target="_blank" href="http://feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fonlinelibrary.wiley.com%2Frss%2Fjournal%2F10.1002%2F%28ISSN%291942-2466">JAMES</a> on feedly
+		</div>
+	</body>
+</html>

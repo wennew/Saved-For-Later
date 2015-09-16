@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Guest post: Some thoughts on Climate Modeling</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style>
+			body { 
+				font-family: sans-serif;
+				font-size: 16px; 
+				line-height: 1.7; 
+				text-rendering: optimizeLegibility; 
+				max-width: 600px;
+				margin-top: 40px;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 40px;
+				-webkit-font-smoothing:antialiased;
+			}
+			h1 { 
+				font-size: 24px; 
+				line-height: 28px; 
+				font-weight: 700; 
+				margin-bottom: 5px;
+				text-decoration: none; 
+				border: none; 
+				color: #333;
+			}
+			h1 a {
+				border-bottom: none;
+			}
+			h2 {
+				font-size: 18px;
+				margin-top: 30px;
+				margin-bottom: 0px;
+			}
+			p {
+				color: #333;
+			}
+			a { 
+				color: inherit; 
+				text-decoration: none; 
+				border-bottom: 
+				1px dotted; 
+			}
+			a:hover {
+				border-bottom: 1px solid; 
+			}
+			img { 
+				page-break-inside: avoid; 
+				max-width: 600px;
+			}
+			.source {
+				margin-bottom: 20px;
+				font-size: 12px;
+				color: #777;
+			}
+			p.source {
+				margin-top: 0px;
+			}
+			.source a {
+				border-bottom: none;
+			}
+			.source a:hover {
+				border-bottom: 1px solid #B4B4B4;
+				color: #777;
+			}
+			.bottom-links {
+				border-top: 1px solid #C2C2C2;
+				margin-top: 40px;
+				padding-top: 10px;
+				color: #777;
+			}
+		</style>
+<!-- Article JSON data
+<script>
+var article = {"id":"L9e1fpSPJWQMdmtb/jasmXxFfNLfg5HRYOm/tFGXLxc=_14fb297656f:a070d7:61049dae","keywords":["Climate change","ClimateBall","Global warming","IPCC","Science","Climate Modeling","Climate models","GCMs","Michael Tobis","Model tuning","Parametrization","Physics"],"fingerprint":"c87e8171","originId":"http://andthentheresphysics.wordpress.com/?p=6117","content":{"content":"<p><i>This is guest post by Michael Tobis, partly motivated by some discussions we’ve had about modelling. In particular, the difference between modelling in the physical sciences, and modelling in other research areas. My personal – and not entirely ill-informed – view is that physically-motivated models (like climate models) have an advantage over other models, in that they are constrained by the fundamental laws of physics. That doesn’t, however, mean that they don’t have flaws and can’t be improved. Michael’s post is an attempt to start some kind of discussion about this general issue.</i></p>\n<p><b>SOME THOUGHTS ON CLIMATE MODELING</b></p>\n<p>Some recent discussion here on climate models in the thread <a href=\"https://andthentheresphysics.wordpress.com/2015/08/05/its-more-difficult-with-physical-models/#comments\">It’s more difficult with physical models</a> raised several interesting issues. </p>\n<p>In particular I’d like to expend some effort on Richard Tol’s claim that</p>\n<blockquote><p>\n“GCMs have a remote relationship with physics. The models are full of fudge and tuning factors. The fact that they roughly represent observations may, for all we know, reflect skill in model calibration rather than skill in forecasting”\n</p></blockquote>\n<p>John von Neumann famously said “With four parameters I can fit an elephant, and with five I can make him wiggle his trunk.”, and understanding this is very important in evaluating models. </p>\n<p>(For an example of a four parameter elephant, see:</p>\n<p><a rel=\"nofollow\" href=\"http://www.johndcook.com/blog/2011/06/21/how-to-fit-an-elephant/\">http://www.johndcook.com/blog/2011/06/21/how-to-fit-an-elephant/</a> ) </p>\n<p>Tol’s critique seems to imply that exactly this sort of curve-fitting is going on.</p>\n<p>It is the case that there are a significant number of parameters in a climate model that are not strongly constrained by first principles. These parameters are not just magic numbers – they have an actual physical meaning. So they are constrained by observations. <a href=\"http://www.inscc.utah.edu/~krueger/CV.pdf\">Here’s</a> an example of how tightly coupled modeling and observational studies can be in investigating the best values for these parameters. </p>\n<p>But effort is not enough. It’s important to see results. In this regard, a succinct summary is provided by Steve Easterbrook <a href=\"http://www.easterbrook.ca/steve/2014/02/climate-model-vs-satellite-data/\">here</a>.</p>\n<p>It’s important to realize that full-fledged climate models (GCMs) do not just output a single number (global temperature): they output a three-dimensional realization of the climate system advancing through time. Their output contains immense amounts of data about a system with complex but repeatable behaviors. That immensity and complexity cannot be captured with a few numbers like the “elephant” could.</p>\n<p>On the referenced thread here, I responded to Tol in a different way:</p>\n<blockquote><p>\n“Tol’s suggestion that GCMs can be tuned to give any desired result is a testable hypothesis.</p>\n<p>The oil companies have enormous technical talent at their disposal. Presumably if there were anything to this hypothesis they would have tried to test it at some time in the last quarter century.</p>\n<p>The motivation to create an alternative model which can comparably well replicate observed and paleo climate with very low sensitivity is surely enormous. Where is their result?”\n</p></blockquote>\n<p>This got far less attention that I had hoped. Well, none actually. But I think it’s a suggestion worthy of consideration.</p>\n<p>Maybe we should drop our mutual animosity, roll up our sleeves, and try the experiment I suggested. </p>\n<p>I don’t mean to suggest that such an effort would be trivial.</p>\n<p>Nevertheless I’d like to begin to discuss climate models and their role in climate science in some earnest, and discuss in detail the extent to which Tol’s suggestion is right or wrong.</p>\n<p>Despite the points I made in defense of climate models above, I am someone who has not been entirely uncritical of the climate modeling enterprise.</p>\n<p>I recently came across a printout of an essay I wrote in 2004 or so and OCR’ed it back to life. My essay, with very minor edits, is <a href=\"https://docs.google.com/document/d/1o34EtRKFvl-fvQVgQZWzNZx74Vo1nHoApgwcJ2i83Pk/edit\">here</a>.</p>\n<p>The main points I raised are 1) that the software methodology of these models is antiquated, 2) that the career paths for people interested in applying both software and climate expertise are woefully unrewarded 3) that the attachment to hard-won code bases is ill-advised 4) that the attachment to pushing complexity bounds distracts from important problems and 5) that cumulatively these problems are impeding scientific progress. Alas, I think these points are hardly less true than when I wrote them. Arguably, it’s worse.</p>\n<p>Various people have responded to this essay by agreeing that there are similar issues in other physical sciences.</p>\n<p>The question of whether climate models can be dramatically rather than incrementally improved, using new optimization methods emerging in computational sciences, remains open in my opinion. If we corner ourselves into needing climate geoengineering, we will need much better modeling tools than are now available. And testing the naysayers’ claim that the models are somehow tuned to give the gloomy result that we are presumed to prefer has value in itself. Building another impenetrable pile of Fortran will not move us toward either goal.</p>\n<p>Is something different and better possible? I think so.</p>\n<p>Could something different and better actually help us better constrain the climate sensitivity in an objective way? I think that’s sufficiently plausible that we ought to consider it.</p><img height=\"1\" alt=\"\" width=\"1\" src=\"https://pixel.wp.com/b.gif?host=andthentheresphysics.wordpress.com&amp;blog=61106100&amp;post=6117&amp;subd=andthentheresphysics&amp;ref=&amp;feed=1\" border=\"0\">","direction":"ltr"},"title":"Guest post: Some thoughts on Climate Modeling","published":1441808266000,"crawled":1441810310511,"alternate":[{"href":"https://andthentheresphysics.wordpress.com/2015/09/09/guest-post-some-thoughts-on-scientific-software-in-general-and-climate-modeling-in-particular/","type":"text/html"}],"enclosure":[{"href":"https://1.gravatar.com/avatar/d13a7748b5c663820a1b44bb93a6746b?s=96&d=identicon&r=G"}],"author":"...and Then There's Physics","origin":{"streamId":"feed/http://andthentheresphysics.wordpress.com/feed/","title":"...and Then There's Physics","htmlUrl":"https://andthentheresphysics.wordpress.com"},"summary":{"content":"This is guest post by Michael Tobis, partly motivated by some discussions we’ve had about modelling. In particular, the difference between modelling in the physical sciences, and modelling in other research areas. My personal – and not entirely ill-informed – … <a href=\"https://andthentheresphysics.wordpress.com/2015/09/09/guest-post-some-thoughts-on-scientific-software-in-general-and-climate-modeling-in-particular/\">Continue reading <span>→</span></a><img height=\"1\" alt=\"\" width=\"1\" src=\"https://pixel.wp.com/b.gif?host=andthentheresphysics.wordpress.com&amp;blog=61106100&amp;post=6117&amp;subd=andthentheresphysics&amp;ref=&amp;feed=1\" border=\"0\">","direction":"ltr"}};
+</script>
+-->
+	</head>
+	<body>
+		<div class="article-header">
+			<h1><a target="_blank" href="https://andthentheresphysics.wordpress.com/2015/09/09/guest-post-some-thoughts-on-scientific-software-in-general-and-climate-modeling-in-particular/">Guest post: Some thoughts on Climate Modeling</a></h1>
+			<p class="source"><a target="_blank" href="https://andthentheresphysics.wordpress.com">andthentheresphysics</a>
+ by ...and Then There's Physics, 2015-09-09
+            </p>
+		</div>
+		<div id="article-body" class="article-body instapaper_body entry-content">
+		<div><div class="entry-content">
+						<p><i>This is guest post by Michael Tobis, partly motivated by some discussions we’ve had about modelling.  In particular, the difference between modelling in the physical sciences, and modelling in other research areas. My personal – and not entirely ill-informed – view is that physically-motivated models (like climate models) have an advantage over other models, in that they are constrained by the fundamental laws of physics.  That doesn’t, however, mean that they don’t have flaws and can’t be improved.  Michael’s post is an attempt to start some kind of discussion about this general issue.</i></p>
+<p><b>SOME THOUGHTS ON CLIMATE MODELING</b></p>
+<p>Some recent discussion here on climate models in the thread <a href="https://andthentheresphysics.wordpress.com/2015/08/05/its-more-difficult-with-physical-models/#comments">It’s more difficult with physical models</a> raised several interesting issues. </p>
+<p>In particular I’d like to expend some effort on Richard Tol’s claim that</p>
+<blockquote><p>
+“GCMs have a remote relationship with physics. The models are full of fudge and tuning factors. The fact that they roughly represent observations may, for all we know, reflect skill in model calibration rather than skill in forecasting”
+</p></blockquote>
+<p>John von Neumann famously said “With four parameters I can fit an elephant, and with five I can make him wiggle his trunk.”, and understanding this is very important in evaluating models. </p>
+<p>(For an example of a four parameter elephant, see:</p>
+<p><a href="http://www.johndcook.com/blog/2011/06/21/how-to-fit-an-elephant/" rel="nofollow">http://www.johndcook.com/blog/2011/06/21/how-to-fit-an-elephant/</a> ) </p>
+<p>Tol’s critique seems to imply that exactly this sort of curve-fitting is going on.</p>
+<p>It is the case that there are a significant number of parameters in a climate model that are not strongly constrained by first principles. These parameters are not just magic numbers – they have an actual physical meaning. So they are constrained by observations. <a href="http://www.inscc.utah.edu/~krueger/CV.pdf">Here’s</a> an example of how tightly coupled modeling and observational studies can be in investigating the best values for these parameters. </p>
+<p>But effort is not enough. It’s important to see results. In this regard, a succinct summary is provided by Steve Easterbrook <a href="http://www.easterbrook.ca/steve/2014/02/climate-model-vs-satellite-data/">here</a>.</p>
+<p>It’s important to realize that full-fledged climate models (GCMs) do not just output a single number (global temperature): they output a three-dimensional realization of the climate system advancing through time. Their output contains immense amounts of data about a system with complex but repeatable behaviors. That immensity and complexity cannot be captured with a few numbers like the “elephant” could.</p>
+<p>On the referenced thread here, I responded to Tol in a different way:</p>
+<blockquote><p>
+“Tol’s suggestion that GCMs can be tuned to give any desired result is a testable hypothesis.</p>
+<p>The oil companies have enormous technical talent at their disposal. Presumably if there were anything to this hypothesis they would have tried to test it at some time in the last quarter century.</p>
+<p>The motivation to create an alternative model which can comparably well replicate observed and paleo climate with very low sensitivity is surely enormous. Where is their result?”
+</p></blockquote>
+<p>This got far less attention that I had hoped. Well, none actually. But I think it’s a suggestion worthy of consideration.</p>
+<p>Maybe we should drop our mutual animosity, roll up our sleeves, and try the experiment I suggested. </p>
+<p>I don’t mean to suggest that such an effort would be trivial.</p>
+<p>Nevertheless I’d like to begin to discuss climate models and their role in climate science in some earnest, and discuss in detail the extent to which Tol’s suggestion is right or wrong.</p>
+<p>Despite the points I made in defense of climate models above, I am someone who has not been entirely uncritical of the climate modeling enterprise.</p>
+<p>I recently came across a printout of an essay I wrote in 2004 or so and OCR’ed it back to life. My essay, with very minor edits, is <a href="https://docs.google.com/document/d/1o34EtRKFvl-fvQVgQZWzNZx74Vo1nHoApgwcJ2i83Pk/edit">here</a>.</p>
+<p>The main points I raised are 1) that the software methodology of these models is antiquated, 2) that the career paths for people interested in applying both software and climate expertise are woefully unrewarded 3) that the attachment to hard-won code bases is ill-advised 4) that the attachment to pushing complexity bounds distracts from important problems and 5) that cumulatively these problems are impeding scientific progress. Alas, I think these points are hardly less true than when I wrote them. Arguably, it’s worse.</p>
+<p>Various people have responded to this essay by agreeing that there are similar issues in other physical sciences.</p>
+<p>The question of whether climate models can be dramatically rather than incrementally improved, using new optimization methods emerging in computational sciences, remains open in my opinion. If we corner ourselves into needing climate geoengineering, we will need much better modeling tools than are now available. And testing the naysayers’ claim that the models are somehow tuned to give the gloomy result that we are presumed to prefer has value in itself. Building another impenetrable pile of Fortran will not move us toward either goal.</p>
+<p>Is something different and better possible? I think so.</p>
+<p>Could something different and better actually help us better constrain the climate sensitivity in an objective way? I think that’s sufficiently plausible that we ought to consider it.</p>
+		<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded" id="like-post-wrapper-61106100-6117-55f04ee543798" data-src="//widgets.wp.com/likes/#blog_id=61106100&amp;post_id=6117&amp;origin=andthentheresphysics.wordpress.com&amp;obj_id=61106100-6117-55f04ee543798" data-name="like-post-frame-61106100-6117-55f04ee543798"><h3 class="sd-title">Like this:</h3><p class="likes-widget-placeholder post-likes-widget-placeholder"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></p><span class="sd-text-color"/><a class="sd-link-color"/></div>
+<p id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</p></div>											</div>
+
+
+					</div>
+		</div>
+		<div class="bottom-links">
+			Saved from <a target="_blank" href="http://feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fandthentheresphysics.wordpress.com%2Ffeed%2F">andthentheresphysics</a> on feedly
+		</div>
+	</body>
+</html>

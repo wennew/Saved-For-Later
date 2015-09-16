@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Wave adjustment: general concept and examples</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style>
+			body { 
+				font-family: sans-serif; 
+				font-size: 16px; 
+				line-height: 1.7; 
+				text-rendering: optimizeLegibility; 
+				max-width: 600px;
+				margin-top: 40px;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 40px;
+				-webkit-font-smoothing:antialiased;
+			}
+			h1 { 
+				font-size: 24px; 
+				line-height: 28px; 
+				font-weight: 700; 
+				margin-bottom: 5px;
+				text-decoration: none; 
+				border: none; 
+				color: #333;
+			}
+			h1 a {
+				border-bottom: none;
+			}
+			h2 {
+				font-size: 18px;
+				margin-top: 30px;
+				margin-bottom: 0px;
+			}
+			p {
+				color: #333;
+			}
+			a { 
+				color: inherit; 
+				text-decoration: none; 
+				border-bottom: 
+				1px dotted; 
+			}
+			a:hover {
+				border-bottom: 1px solid; 
+			}
+			img { 
+				page-break-inside: avoid; 
+				max-width: 600px;
+			}
+			.source {
+				margin-bottom: 20px;
+				font-size: 12px;
+				color: #777;
+			}
+			p.source {
+				margin-top: 0px;
+			}
+			.source a {
+				border-bottom: none;
+			}
+			.source a:hover {
+				border-bottom: 1px solid #B4B4B4;
+				color: #777;
+			}
+			.bottom-links {
+				border-top: 1px solid #C2C2C2;
+				margin-top: 40px;
+				padding-top: 10px;
+				color: #777;
+			}
+		</style>
+<!-- Article JSON data
+<script>
+var article = {"id":"xGBPtPn0dYL80J8/PaNtCFkxPA7sfyuLTZcErAQTTWM=_14f44d8c792:1209bc98:1cbd0d70","fingerprint":"e320d9c4","originId":"http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=9915046&utm_source=Issue_Alert&utm_medium=RSS&utm_campaign=FLM","title":"Wave adjustment: general concept and examples","published":1439969101714,"crawled":1439969101714,"alternate":[{"href":"http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=9915046&utm_source=Issue_Alert&utm_medium=RSS&utm_campaign=FLM","type":"text/html"}],"origin":{"streamId":"feed/http://journals.cambridge.org/data/rss/feed_FLM_rss_2.0.xml","title":"Journal of Fluid Mechanics - Current Volume","htmlUrl":"http://journals.cambridge.org/action/displayJournal?jid=FLM"},"summary":{"content":"<table border=\"0\"><tr><td>Research Articles <br>G. M. Reznik, <br><a href=\"http://journals.cambridge.org/jid_FLM\">Journal of Fluid Mechanics</a>, <a href=\"http://journals.cambridge.org/action/displayIssue?jid=FLM&amp;volumeId=779&amp;issueId=-1&amp;seriesId=0\">Volume 779</a>, pp 514-543<br><br><a href=\"http://journals.cambridge.org/action/displayAbstract?fromPage=online&amp;aid=9915046&amp;utm_source=Issue_Alert&amp;utm_medium=RSS&amp;utm_campaign=FLM\">Abstract</a></td><td><br><a href=\"http://journals.cambridge.org/jid_FLM\"><img alt=\"Journal of Fluid Mechanics\" align=\"right\" src=\"http://journals.cambridge.org/cover_images/FLM/FLM.jpg\"></a></td></tr></table><br><a target=\"_blank\" href=\"http://api.addthis.com/oexchange/0.8/forward/facebook/offer?pco=tbx32nj-1.0&amp;url=http%3A%2F%2Fjournals.cambridge.org%2Faction%2FdisplayAbstract%3FfromPage%3Donline%26aid%3D9915046%26utm_source%3DIssue_Alert%26utm_medium%3DRSS%26utm_campaign%3DFLM&amp;pubid=xa-502df628072bfd96\"><img height=\"25\" alt=\"Facebook\" width=\"25\" src=\"http://cache.addthiscdn.com/icons/v1/thumbs/32x32/facebook.png\" border=\"0\"></a><a target=\"_blank\" href=\"http://api.addthis.com/oexchange/0.8/forward/twitter/offer?pco=tbx32nj-1.0&amp;url=http%3A%2F%2Fjournals.cambridge.org%2Faction%2FdisplayAbstract%3FfromPage%3Donline%26aid%3D9915046%26utm_source%3DIssue_Alert%26utm_medium%3DRSS%26utm_campaign%3DFLM&amp;pubid=xa-502df628072bfd96\"><img height=\"25\" alt=\"Twitter\" width=\"25\" src=\"http://cache.addthiscdn.com/icons/v1/thumbs/32x32/twitter.png\" border=\"0\"></a><a target=\"_blank\" href=\"http://api.addthis.com/oexchange/0.8/forward/mendeley/offer?pco=tbx32nj-1.0&amp;url=http%3A%2F%2Fjournals.cambridge.org%2Faction%2FdisplayAbstract%3FfromPage%3Donline%26aid%3D9915046%26utm_source%3DIssue_Alert%26utm_medium%3DRSS%26utm_campaign%3DFLM&amp;pubid=xa-502df628072bfd96\"><img height=\"25\" alt=\"Mendeley\" width=\"25\" src=\"http://cache.addthiscdn.com/icons/v1/thumbs/32x32/mendeley.png\" border=\"0\"></a><a target=\"_blank\" href=\"http://api.addthis.com/oexchange/0.8/forward/email/offer?pco=tbx32nj-1.0&amp;url=http%3A%2F%2Fjournals.cambridge.org%2Faction%2FdisplayAbstract%3FfromPage%3Donline%26aid%3D9915046%26utm_source%3DIssue_Alert%26utm_medium%3DRSS%26utm_campaign%3DFLM&amp;pubid=xa-502df628072bfd96\"><img height=\"25\" alt=\"Email\" width=\"25\" src=\"http://cache.addthiscdn.com/icons/v1/thumbs/32x32/email.png\" border=\"0\"></a><a target=\"_blank\" href=\"http://www.addthis.com/bookmark.php?source=tbx32nj-1.0&amp;=250&amp;pubid=xa-502df628072bfd96&amp;url=http%3A%2F%2Fjournals.cambridge.org%2Faction%2FdisplayAbstract%3FfromPage%3Donline%26aid%3D9915046%26utm_source%3DIssue_Alert%26utm_medium%3DRSS%26utm_campaign%3DFLM\"><img height=\"25\" alt=\"More...\" width=\"25\" src=\"http://cache.addthiscdn.com/icons/v1/thumbs/32x32/more.png\" border=\"0\"></a>","direction":"ltr"}};
+</script>
+-->
+	</head>
+	<body>
+		<div class="article-header">
+			<h1><a target="_blank" href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=9915046&utm_source=Issue_Alert&utm_medium=RSS&utm_campaign=FLM">Wave adjustment: general concept and examples</a></h1>
+			<p class="source"><a target="_blank" href="http://journals.cambridge.org/action/displayJournal?jid=FLM">JFM</a>
+            </p>
+		</div>
+		<div id="article-body" class="article-body instapaper_body entry-content">
+		<div><div xmlns="http://www.w3.org/1999/xhtml" class="description-box"><h3>Papers</h3><h3 class="author">G. M. Reznik </h3><p class="smallcopy"/><p>
+            P. P. Shirshov Institute of Oceanology, Russian Academy of Sciences, 36 Nakhimovskiy Prospekt,  Moscow 117997, Russia
+         </p><p class="section-title">Abstract</p><p/><p>We formulate a general theory of wave adjustment applicable to any physical system (not necessarily a hydrodynamic one), which, being linearized, possesses linear invariants and a complete system of waves harmonically depending on the time <span class="mathjaxImage"><img src="/fulltext_content/FLM/FLM779/S0022112015003912_inline1.gif" alt="$t$"/></span><span class="mathjaxTex">\$t\$</span>. The invariants are determined by the initial conditions and are zero for the waves, which, therefore, do not transport and affect the invariants. The evolution of such a system can be represented naturally as the sum of a stationary component with non-zero invariants and a non-steady wave part with zero invariants. If the linear system is disturbed by a small perturbation (linear or nonlinear), then the state vector of the system is split into slow balanced and fast wave components. Various scenarios of the wave adjustment are demonstrated with fairly simple hydrodynamic models. The simplest scenario, called ‘fast radiation’, takes place when the waves rapidly (their group speed <span class="mathjaxImage"><img src="/fulltext_content/FLM/FLM779/S0022112015003912_inline2.gif" alt="$c_{gr}$"/></span><span class="mathjaxTex">\$c_{gr}\$</span> greatly exceeds the slow flow velocity <span class="mathjaxImage"><img src="/fulltext_content/FLM/FLM779/S0022112015003912_inline3.gif" alt="$U$"/></span><span class="mathjaxTex">\$U\$</span>) radiate away from the initial perturbation and do not interact effectively with the slow component. As a result, at large times, after the waves propagate away, the residual flow is slow and described by a balanced model. The scenario is exemplified by the three-dimensional non-rotating barotropic flow with a free surface. A more complicated scenario, called ‘nonlinear trapping’, occurs if oscillations with small group speed <span class="mathjaxImage"><img src="/fulltext_content/FLM/FLM779/S0022112015003912_inline4.gif" alt="$c_{gr}\leqslant U$"/></span><span class="mathjaxTex">\$c_{gr}\leqslant U\$</span> are present in the wave spectrum. In this case, after nonlinear wave adjustment, the state vector is a superposition of the slow balanced component and oscillations with small <span class="mathjaxImage"><img src="/fulltext_content/FLM/FLM779/S0022112015003912_inline5.gif" alt="$c_{gr}$"/></span><span class="mathjaxTex">\$c_{gr}\$</span> trapped by this component. An example of this situation is the geostrophic adjustment of a three-dimensional rotating barotropic layer with a free surface. In the third scenario, called ‘incomplete splitting’, the wave adjustment is accompanied by non-stationary boundary layers arising near rigid and internal boundaries at large times. The thickness of such a layer tends to zero and cross-gradients of physical parameters in the layer tend to infinity as <span class="mathjaxImage"><img src="/fulltext_content/FLM/FLM779/S0022112015003912_inline6.gif" alt="$t\rightarrow \infty$"/></span><span class="mathjaxTex">\$t\rightarrow \infty\$</span>. The layer is an infinite number of wave modes whose group speed tends to zero as the mode number tends to infinity. In such a system, complete splitting of motion into fast and slow components is impossible even in the linear approximation. The scenario is illustrated by an example of stratified non-rotating flow between two rigid lids. The above scenarios describe, at least, the majority of known cases of wave adjustment.</p><p class="Dates">(Received February 23 2015)</p><p class="Dates">(Revised May 25 2015)</p><p class="Dates">(Accepted July 02 2015)</p></div></div>
+		</div>
+		<div class="bottom-links">
+			Saved from <a target="_blank" href="http://feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fjournals.cambridge.org%2Fdata%2Frss%2Ffeed_FLM_rss_2.0.xml">JFM</a> on feedly
+		</div>
+	</body>
+</html>

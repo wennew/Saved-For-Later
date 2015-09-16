@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Sea Surface Temperature Predictions in NCEP CFSv2 Using a Simple Ocean Initialization Scheme</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style>
+			body { 
+				font-family: sans-serif; 
+				font-size: 16px; 
+				line-height: 1.7; 
+				text-rendering: optimizeLegibility; 
+				max-width: 600px;
+				margin-top: 40px;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 40px;
+				-webkit-font-smoothing:antialiased;
+			}
+			h1 { 
+				font-size: 24px; 
+				line-height: 28px; 
+				font-weight: 700; 
+				margin-bottom: 5px;
+				text-decoration: none; 
+				border: none; 
+				color: #333;
+			}
+			h1 a {
+				border-bottom: none;
+			}
+			h2 {
+				font-size: 18px;
+				margin-top: 30px;
+				margin-bottom: 0px;
+			}
+			p {
+				color: #333;
+			}
+			a { 
+				color: inherit; 
+				text-decoration: none; 
+				border-bottom: 
+				1px dotted; 
+			}
+			a:hover {
+				border-bottom: 1px solid; 
+			}
+			img { 
+				page-break-inside: avoid; 
+				max-width: 600px;
+			}
+			.source {
+				margin-bottom: 20px;
+				font-size: 12px;
+				color: #777;
+			}
+			p.source {
+				margin-top: 0px;
+			}
+			.source a {
+				border-bottom: none;
+			}
+			.source a:hover {
+				border-bottom: 1px solid #B4B4B4;
+				color: #777;
+			}
+			.bottom-links {
+				border-top: 1px solid #C2C2C2;
+				margin-top: 40px;
+				padding-top: 10px;
+				color: #777;
+			}
+		</style>
+<!-- Article JSON data
+<script>
+var article = {"id":"jADphGWlxyMfmM5KN4MH7IYg+uS0b5mFzHe/RgzWwkY=_14d378b6395:da76098:69c6e04e","keywords":["article"],"fingerprint":"c157bc7d","originId":"http://journals.ametsoc.org/doi/abs/10.1175/MWR-D-14-00297.1?af=R","title":"Sea Surface Temperature Predictions in NCEP CFSv2 Using a Simple Ocean Initialization Scheme","published":1430982000000,"crawled":1431155991445,"alternate":[{"href":"http://journals.ametsoc.org/doi/abs/10.1175/MWR-D-14-00297.1?af=R","type":"text/html"}],"author":"Jieshun Zhu et al","origin":{"streamId":"feed/http://journals.ametsoc.org/action/showFeed?type=etoc&feed=rss&jc=mwre","title":"American Meteorological Society: Monthly Weather Review: Table of Contents","htmlUrl":"http://journals.ametsoc.org/loi/mwre?af=R"},"summary":{"content":"Monthly Weather Review, Ahead of Print. <br>","direction":"ltr"}};
+</script>
+-->
+	</head>
+	<body>
+		<div class="article-header">
+			<h1><a target="_blank" href="http://journals.ametsoc.org/doi/abs/10.1175/MWR-D-14-00297.1?af=R">Sea Surface Temperature Predictions in NCEP CFSv2 Using a Simple Ocean Initialization Scheme</a></h1>
+			<p class="source"><a target="_blank" href="http://journals.ametsoc.org/loi/mwre?af=R">MWR</a>
+ by Jieshun Zhu et al, 2015-05-09
+            </p>
+		</div>
+		<div id="article-body" class="article-body instapaper_body entry-content">
+		<div><div id="articleContent"><p class="fulltext"/><h1 class="arttitle">Sea Surface Temperature Predictions in NCEP CFSv2 Using a Simple Ocean Initialization Scheme</h1><div class="artAuthors"><strong>Jieshun<span class="NLM_x"> </span>Zhu<span class="NLM_x"><x xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:space="preserve">,</x></span><a class="ref" href="#aff1"><sup>1,</sup></a><a class="ref" href="#aff4"><sup>4</sup></a><span class="NLM_x"> </span>Arun<span class="NLM_x"> </span>Kumar<span class="NLM_x"><x xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:space="preserve">,</x></span><a class="ref" href="#aff1"><sup>1</sup></a><span class="NLM_x"> </span>Hui<span class="NLM_x"> </span>Wang<span class="NLM_x"><x xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:space="preserve">,</x></span><a class="ref" href="#aff1"><sup>1</sup></a><a class="ref" href="#aff4"><sup>,4</sup></a><span class="NLM_x"><x xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:space="preserve"> and </x></span>Bohua<span class="NLM_x"> </span>Huang<a class="ref" href="#aff2"><sup>2</sup></a><a class="ref" href="#aff3"><sup>,3</sup></a></strong><p class="fulltext"><a name="aff1"/><sup>1</sup> Climate Prediction Center, NOAA/NWS/NCEP, College Park, Maryland, USA</p><p class="fulltext"><a name="aff2"/><sup>2</sup> Department of Atmospheric, Oceanic, and Earth Sciences, College of Science, George Mason University, Fairfax, Virginia, USA</p><p class="fulltext"><a name="aff3"/><sup>3</sup> Center for Ocean-Land-Atmosphere Studies, George Mason University, Fairfax, Virginia, USA</p><p class="fulltext"><a name="aff4"/><sup>4</sup> Innovim, Greenbelt, Maryland, USA</p></div><p class="fulltext"/><div class="abstractSection"><p>In contrast to operational climate predictions based on sophisticated ocean data assimilation schemes at the National Centers for Environmental Predictions (NCEP), this study applied a simple ocean initialization scheme to the NCEP latest seasonal prediction model - Climate Forecast System version 2 (CFSv2). In the scheme, sea surface temperature (SST) was the only observed information applied to derive ocean initial states. The physical basis for the method is that, through air-sea coupling, SST is capable of reproducing some observed features of ocean evolutions by forcing the atmospheric winds. SST predictions based on the scheme are compared against hindcasts from the National (lately North American) Multimodel Ensemble (NMME) project.</p><p class="last">It was found that due to substantial biases in the tropical eastern Pacific in the ocean initial conditions produced by SST assimilation, ENSO SST predictions were not as good as those with sophisticated initialization schemes, e.g., hindcasts in the NMME project. However, in other basins, SST predictions based on simple ocean initialization procedure were not worse (sometimes even better) than those with sophisticated initialization schemes. These comparisons indicate that it was helpful that subsurface ocean information be assimilated to improve the tropical Pacific SST predictions, while SST-based ocean assimilation was an effective way to enhance SST prediction capability in other ocean basins. By examining multimodel ensembles with the simple scheme-based hindcasts either included or excluded in NMME, it is also suggested that including the hindcast would generally benefit multimodel ensemble forecasts. In addition, possible ways to further improve ENSO SST predictions with the simple initialization scheme are also discussed.</p></div><p class="artAuthors"/><div class="NLM_author-notes"><a name=""/><div class="NLM_corresp"><a name="cor1"/><i>Corresponding author’s address</i><p>: Dr. Jieshun Zhu, Climate Prediction Center, 5830 University Research Court, College Park, MD 20740. E-mail: </p><a class="email" href="mailto:jieshun.zhu@noaa.gov">jieshun.zhu@noaa.gov</a></div></div><p class="articleDivider"/></div>
+        
+        </div>
+		</div>
+		<div class="bottom-links">
+			Saved from <a target="_blank" href="http://feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fjournals.ametsoc.org%2Faction%2FshowFeed%3Ftype%3Detoc%26feed%3Drss%26jc%3Dmwre">MWR</a> on feedly
+		</div>
+	</body>
+</html>

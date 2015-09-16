@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Energy-conserving finite-difference schemes for quasi-hydrostatic equations</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style>
+			body { 
+				font-family: sans-serif; 
+				font-size: 16px; 
+				line-height: 1.7; 
+				text-rendering: optimizeLegibility; 
+				max-width: 600px;
+				margin-top: 40px;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 40px;
+				-webkit-font-smoothing:antialiased;
+			}
+			h1 { 
+				font-size: 24px; 
+				line-height: 28px; 
+				font-weight: 700; 
+				margin-bottom: 5px;
+				text-decoration: none; 
+				border: none; 
+				color: #333;
+			}
+			h1 a {
+				border-bottom: none;
+			}
+			h2 {
+				font-size: 18px;
+				margin-top: 30px;
+				margin-bottom: 0px;
+			}
+			p {
+				color: #333;
+			}
+			a { 
+				color: inherit; 
+				text-decoration: none; 
+				border-bottom: 
+				1px dotted; 
+			}
+			a:hover {
+				border-bottom: 1px solid; 
+			}
+			img { 
+				page-break-inside: avoid; 
+				max-width: 600px;
+			}
+			.source {
+				margin-bottom: 20px;
+				font-size: 12px;
+				color: #777;
+			}
+			p.source {
+				margin-top: 0px;
+			}
+			.source a {
+				border-bottom: none;
+			}
+			.source a:hover {
+				border-bottom: 1px solid #B4B4B4;
+				color: #777;
+			}
+			.bottom-links {
+				border-top: 1px solid #C2C2C2;
+				margin-top: 40px;
+				padding-top: 10px;
+				color: #777;
+			}
+		</style>
+<!-- Article JSON data
+<script>
+var article = {"id":"D/GCzJIMKwpT2zEc7mrHM9Nm689Lx94yD8pSVWSUn/I=_14d99976c3e:17e64a37:de01cf22","fingerprint":"a4eb2c7c","originId":"http://onlinelibrary.wiley.com/resolve/doi?DOI=10.1002%2Fqj.2590","content":{"content":"<div><p>The pressure-based hydrostatic primitive equations model LMD-Z is extended to solve the quasi-hydrostatic deep-atmosphere as well as the non-traditional shallow-atmosphere equations (with a complete Coriolis force representation).</p></div>\n<div><p>The continuous equations are first derived in their curl-form using Eulerian horizontal and non-Eulerian vertical coordinates. The equations are then interpreted as a Hamiltonian system, as they are expressed in terms of functional derivatives of the Hamiltonian. Using a finite-difference scheme on a longitude/latitude grid and based either on a Lagrangian or mass-based vertical coordinate, the discrete scheme is obtained by imitating the Hamiltonian formulation at the discrete level. It is shown how this form leads straightforwardly to the conservation of discrete total energy. The relation between the discrete equations and the discrete antisymmetry property of the Poisson bracket is discussed.</p></div>\n<div><p>The computing infrastructure of the dynamical core is kept essentially unchanged but the modification of the hydrostatic balance requires a mass-based vertical coordinate. Also, absolute angular momentum is used as a prognostic variable instead of relative velocity, which allows time-dependent metric terms and the non-traditional Coriolis force to be absorbed into it.</p></div>\n<div><p>The prototype implementation is applied to idealized circulations of an Earth-like small planet and validates the stability and accuracy of the new dynamical core.</p></div>","direction":"ltr"},"title":"Energy-conserving finite-difference schemes for quasi-hydrostatic equations","published":1432799188290,"crawled":1432800947262,"alternate":[{"href":"http://onlinelibrary.wiley.com/resolve/doi?DOI=10.1002%2Fqj.2590","type":"text/html"}],"author":"Marine Tort, Thomas Dubos, Thomas Melvin","origin":{"streamId":"feed/http://www3.interscience.wiley.com/rss/journal/113388514","title":"Quarterly Journal of the Royal Meteorological Society","htmlUrl":"http://onlinelibrary.wiley.com/resolve/doi?DOI=10.1002%2F%28ISSN%291477-870X"},"summary":{"content":"The pressure-based hydrostatic primitive equations model LMD-Z is extended to solve the quasi-hydrostatic deep-atmosphere as well as the non-traditional shallow-atmosphere equations (with a complete Coriolis force representation).\nThe continuous equations are first derived in their curl-form using Eulerian horizontal and non-Eulerian vertical coordinates. The equations are then interpreted as a Hamiltonian system, as they are expressed in terms of functional derivatives of the Hamiltonian. Using a finite-difference scheme on a longitude/latitude grid and based either on a Lagrangian or mass-based vertical coordinate, the discrete scheme is obtained by imitating the Hamiltonian formulation at the discrete level. It is shown how this form leads straightforwardly to the conservation of discrete total energy. The relation between the discrete equations and the discrete antisymmetry property of the Poisson bracket is discussed.\nThe computing infrastructure of the dynamical core is kept essentially unchanged but the modification of the hydrostatic balance requires a mass-based vertical coordinate. Also, absolute angular momentum is used as a prognostic variable instead of relative velocity, which allows time-dependent metric terms and the non-traditional Coriolis force to be absorbed into it.\nThe prototype implementation is applied to idealized circulations of an Earth-like small planet and validates the stability and accuracy of the new dynamical core.","direction":"ltr"}};
+</script>
+-->
+	</head>
+	<body>
+		<div class="article-header">
+			<h1><a target="_blank" href="http://onlinelibrary.wiley.com/resolve/doi?DOI=10.1002%2Fqj.2590">Energy-conserving finite-difference schemes for quasi-hydrostatic equations</a></h1>
+			<p class="source"><a target="_blank" href="http://onlinelibrary.wiley.com/resolve/doi?DOI=10.1002%2F%28ISSN%291477-870X">QJRMS</a>
+ by Marine Tort, Thomas Dubos, Thomas Melvin, 2015-05-28
+            </p>
+		</div>
+		<div id="article-body" class="article-body instapaper_body entry-content">
+		<div><p>The pressure-based hydrostatic primitive equations model LMD-Z is extended to solve the quasi-hydrostatic deep-atmosphere as well as the non-traditional shallow-atmosphere equations (with a complete Coriolis force representation).</p></div>
+<div><p>The continuous equations are first derived in their curl-form using Eulerian horizontal and non-Eulerian vertical coordinates. The equations are then interpreted as a Hamiltonian system, as they are expressed in terms of functional derivatives of the Hamiltonian. Using a finite-difference scheme on a longitude/latitude grid and based either on a Lagrangian or mass-based vertical coordinate, the discrete scheme is obtained by imitating the Hamiltonian formulation at the discrete level. It is shown how this form leads straightforwardly to the conservation of discrete total energy. The relation between the discrete equations and the discrete antisymmetry property of the Poisson bracket is discussed.</p></div>
+<div><p>The computing infrastructure of the dynamical core is kept essentially unchanged but the modification of the hydrostatic balance requires a mass-based vertical coordinate. Also, absolute angular momentum is used as a prognostic variable instead of relative velocity, which allows time-dependent metric terms and the non-traditional Coriolis force to be absorbed into it.</p></div>
+<div><p>The prototype implementation is applied to idealized circulations of an Earth-like small planet and validates the stability and accuracy of the new dynamical core.</p></div>
+		</div>
+		<div class="bottom-links">
+			Saved from <a target="_blank" href="http://feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fwww3.interscience.wiley.com%2Frss%2Fjournal%2F113388514">QJRMS</a> on feedly
+		</div>
+	</body>
+</html>

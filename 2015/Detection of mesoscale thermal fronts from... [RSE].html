@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Detection of mesoscale thermal fronts from 4km data using smoothing techniques: Gradient-based fronts classification and basin scale application</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style>
+			body { 
+				font-family: sans-serif; 
+				font-size: 16px; 
+				line-height: 1.7; 
+				text-rendering: optimizeLegibility; 
+				max-width: 600px;
+				margin-top: 40px;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 40px;
+				-webkit-font-smoothing:antialiased;
+			}
+			h1 { 
+				font-size: 24px; 
+				line-height: 28px; 
+				font-weight: 700; 
+				margin-bottom: 5px;
+				text-decoration: none; 
+				border: none; 
+				color: #333;
+			}
+			h1 a {
+				border-bottom: none;
+			}
+			h2 {
+				font-size: 18px;
+				margin-top: 30px;
+				margin-bottom: 0px;
+			}
+			p {
+				color: #333;
+			}
+			a { 
+				color: inherit; 
+				text-decoration: none; 
+				border-bottom: 
+				1px dotted; 
+			}
+			a:hover {
+				border-bottom: 1px solid; 
+			}
+			img { 
+				page-break-inside: avoid; 
+				max-width: 600px;
+			}
+			.source {
+				margin-bottom: 20px;
+				font-size: 12px;
+				color: #777;
+			}
+			p.source {
+				margin-top: 0px;
+			}
+			.source a {
+				border-bottom: none;
+			}
+			.source a:hover {
+				border-bottom: 1px solid #B4B4B4;
+				color: #777;
+			}
+			.bottom-links {
+				border-top: 1px solid #C2C2C2;
+				margin-top: 40px;
+				padding-top: 10px;
+				color: #777;
+			}
+		</style>
+<!-- Article JSON data
+<script>
+var article = {"id":"TKHj3Tv8lJ6MHeeW+326z5lKLEE5QfFq/wLwJuj5n8g=_14d894d9110:12e21e1a:7af40b3e","fingerprint":"fd3282b9","originId":"http://rss.sciencedirect.com/action/redirectFile?&zone=main&currentActivity=feed&usageType=outward&url=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%3F_ob%3DGatewayURL%26_origin%3DIRSSSEARCH%26_method%3DcitationSearch%26_piikey%3DS0034425715001273%26_version%3D1%26md5%3D3fb15c426b4a8268c88d898bc8ab6778","recrawled":1433395638198,"title":"Detection of mesoscale thermal fronts from 4km data using smoothing techniques: Gradient-based fronts classification and basin scale application","published":1433316350000,"crawled":1432527671568,"alternate":[{"href":"http://rss.sciencedirect.com/action/redirectFile?&zone=main&currentActivity=feed&usageType=outward&url=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%3F_ob%3DGatewayURL%26_origin%3DIRSSSEARCH%26_method%3DcitationSearch%26_piikey%3DS0034425715001273%26_version%3D1%26md5%3D3fb15c426b4a8268c88d898bc8ab6778","type":"text/html"}],"origin":{"streamId":"feed/http://rss.sciencedirect.com/publication/science/5824","title":"ScienceDirect Publication: Remote Sensing of Environment","htmlUrl":"http://www.sciencedirect.com"},"summary":{"content":"Publication date: <br> <b>Source:</b>Remote Sensing of Environment, Volume 164<br> Author(s): L. Roa-Pascuali , H. Demarcq , A.-E. Nieblas<br><br><br>","direction":"ltr"}};
+</script>
+-->
+	</head>
+	<body>
+		<div class="article-header">
+			<h1><a target="_blank" href="http://rss.sciencedirect.com/action/redirectFile?&zone=main&currentActivity=feed&usageType=outward&url=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%3F_ob%3DGatewayURL%26_origin%3DIRSSSEARCH%26_method%3DcitationSearch%26_piikey%3DS0034425715001273%26_version%3D1%26md5%3D3fb15c426b4a8268c88d898bc8ab6778">Detection of mesoscale thermal fronts from 4km data using smoothing techniques: Gradient-based fronts classification and basin scale application</a></h1>
+			<p class="source"><a target="_blank" href="http://www.sciencedirect.com">RSE</a>
+            </p>
+		</div>
+		<div id="article-body" class="article-body instapaper_body entry-content">
+		<div>
+
+      <div id="frag_2" class="page_fragment" data-fid="2"><hr id="abs_author-highlightsab00101" class="artHeader"/><div class="abstract svAbstract &#10;&#9;  abstractHighlights&#10;&#9;  " data-etype="ab"><h2 class="secHeading" id="author-highlightsab00101">Highlights</h2><p id="sp0075"/><dl class="listitem" id="list_l0005"><dt class="label">•</dt><dd><p id="p0380">We improve 4 km SST frontal detections with a preliminary gradient-based smoothing.</p></dd><dt class="label">•</dt><dd><p id="p0385">Gradient-based smoothing is tested with multiple detection window sizes.</p></dd><dt class="label">•</dt><dd><p id="p0390">Strong and weak fronts are defined based on their thermal gradient intensity.</p></dd><dt class="label">•</dt><dd><p id="p0395">Improved detection performance at 4 km is comparable to 1 km data.</p></dd><dt class="label">•</dt><dd><p id="p0400">The method is adequate to process large marine areas.</p></dd></dl></div><hr id="abs_authorab00051" class="artHeader"/><div class="abstract svAbstract " data-etype="ab"><h2 class="secHeading" id="authorab00051">Abstract</h2><p id="sp0005">In order to optimize frontal detection in sea surface temperature fields at 4 km resolution, a combined statistical and expert-based approach is applied to test different spatial smoothing of the data prior to the detection process. Fronts are usually detected at 1 km resolution using the histogram-based, single image edge detection (SIED) algorithm developed by Cayula and Cornillon in 1992, with a standard preliminary smoothing using a median filter and a 3 × 3 pixel kernel. Here, detections are performed in three study regions (off Morocco, the Mozambique Channel and north-western Australia) and across the Indian Ocean basin using the combination of multiple windows (CMW) method developed by Nieto, Demarcq and McClatchie in 2012 which improves on the original Cayula and Cornillon algorithm. Detections at 4 km and 1 km resolution are compared.</p><p id="sp0010">Fronts are divided into two intensity classes (“weak” and “strong”) according to their thermal gradient. A preliminary smoothing is applied prior to the detection using different convolutions: three type of filters (median, average and Gaussian) combined with four kernel sizes (3 × 3, 5 × 5, 7 × 7, and 9 × 9 pixels) and three detection window sizes (16 × 16, 24 × 24 and 32 × 32 pixels) to test the effect of these smoothing combinations on reducing the background noise of the data and therefore on improving the frontal detection. The performance of the combinations on 4 km data are evaluated using two criteria: detection efficiency and front length. We find that the optimal combination of preliminary smoothing parameters in enhancing detection efficiency and preserving front length includes a median filter, a 16 × 16 pixel window size, and a 5 × 5 pixel kernel for strong fronts and a 7 × 7 pixel kernel for weak fronts. Results show an improvement in detection performance (from largest to smallest window size) of 71% for strong fronts and 120% for weak fronts. Despite the small window used (16 × 16 pixels), the length of the fronts has been preserved relative to that found with 1 km data.</p><p id="sp0015">This optimal preliminary smoothing and the CMW detection algorithm on 4 km sea surface temperature data are then used to describe the spatial distribution of the monthly frequencies of occurrence for both strong and weak fronts across the Indian Ocean basin. In general, strong fronts are observed in coastal areas; whereas weak fronts, with some seasonal exceptions, are mainly located in the open ocean.</p><p id="sp0020">This study shows that adequate noise reduction achieved by a preliminary smoothing of the data considerably improves the frontal detection efficiency as well as the global quality of the results. Consequently, the use of 4 km data enables frontal detections similar to 1 km data (using a standard median 3 × 3 convolution) in terms of detectability, length and location. This method is easily applicable to large regions or at the global scale, with far less constraints of data manipulation and processing time using 4 km data relative to 1 km data.</p></div><p id="embeddedPDF"/><p id="SD_BA1P" class="sgfNoTitleBar sgfNoGadgetBorder svDoNotLink"/><h2 id="kwd_1" class="svKeywords">Keywords</h2><ul class="keyword" id="ks0005"><li id="kw0045" class="svKeywords"><span id="tx0010">Mesoscale thermal fronts</span>; </li><li id="kw0050" class="svKeywords"><span id="tx0015">Preliminary smoothing</span>; </li><li id="kw0055" class="svKeywords"><span id="tx0020">Sea surface temperature</span>; </li><li id="kw0060" class="svKeywords"><span id="tx0025">4 km resolution</span>; </li><li id="kw0065" class="svKeywords"><span id="tx0030">Gradient intensity classification</span>; </li><li id="kw0070" class="svKeywords"><span id="tx0035">Expert-based approach</span>; </li><li id="kw0075" class="svKeywords"><span id="tx0040">Detection efficiency</span>; </li><li id="kw0080" class="svKeywords"><span id="tx0045">Indian Ocean</span></li></ul><p class="artEcomponent"/><div class="artFooterContent"><dl class="correspondence" id="cr0005"><dt class="label topPadd"><a href="#bcr0005" class="intra_ref auth_corr" title="Corresponding author contact information"><sup/></a></dt><dd>Corresponding author. Tel.: + 33 4 99 57 32 13.</dd></dl></div><p class="copyright">Copyright © 2015 Elsevier Inc. All rights reserved.</p><p class="page_fragment_ind" data-id="frag_3"/></div>
+
+               
+
+       
+   
+        
+    </div>
+		</div>
+		<div class="bottom-links">
+			Saved from <a target="_blank" href="http://feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frss.sciencedirect.com%2Fpublication%2Fscience%2F5824">RSE</a> on feedly
+		</div>
+	</body>
+</html>

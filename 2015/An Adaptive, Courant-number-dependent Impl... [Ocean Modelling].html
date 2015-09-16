@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>An Adaptive, Courant-number-dependent Implicit Scheme for Vertical Advection in Oceanic Modeling</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style>
+			body { 
+				font-family: sans-serif; 
+				font-size: 16px; 
+				line-height: 1.7; 
+				text-rendering: optimizeLegibility; 
+				max-width: 600px;
+				margin-top: 40px;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 40px;
+				-webkit-font-smoothing:antialiased;
+			}
+			h1 { 
+				font-size: 24px; 
+				line-height: 28px; 
+				font-weight: 700; 
+				margin-bottom: 5px;
+				text-decoration: none; 
+				border: none; 
+				color: #333;
+			}
+			h1 a {
+				border-bottom: none;
+			}
+			h2 {
+				font-size: 18px;
+				margin-top: 30px;
+				margin-bottom: 0px;
+			}
+			p {
+				color: #333;
+			}
+			a { 
+				color: inherit; 
+				text-decoration: none; 
+				border-bottom: 
+				1px dotted; 
+			}
+			a:hover {
+				border-bottom: 1px solid; 
+			}
+			img { 
+				page-break-inside: avoid; 
+				max-width: 600px;
+			}
+			.source {
+				margin-bottom: 20px;
+				font-size: 12px;
+				color: #777;
+			}
+			p.source {
+				margin-top: 0px;
+			}
+			.source a {
+				border-bottom: none;
+			}
+			.source a:hover {
+				border-bottom: 1px solid #B4B4B4;
+				color: #777;
+			}
+			.bottom-links {
+				border-top: 1px solid #C2C2C2;
+				margin-top: 40px;
+				padding-top: 10px;
+				color: #777;
+			}
+		</style>
+<!-- Article JSON data
+<script>
+var article = {"id":"7Ynf1xL6UPBYeCVpJ+wocEyFFNt7mVqd4MNu7QeZns4=_14ca1b955cc:442d397:be345dbb","fingerprint":"5afc4261","originId":"http://rss.sciencedirect.com/action/redirectFile?&zone=main&currentActivity=feed&usageType=outward&url=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%3F_ob%3DGatewayURL%26_origin%3DIRSSSEARCH%26_method%3DcitationSearch%26_piikey%3DS1463500315000530%26_version%3D1%26md5%3D0b900e58ca7983c02b17abbb30b1a401","title":"An Adaptive, Courant-number-dependent Implicit Scheme for Vertical Advection in Oceanic Modeling","published":1428635331000,"crawled":1428642420172,"alternate":[{"href":"http://rss.sciencedirect.com/action/redirectFile?&zone=main&currentActivity=feed&usageType=outward&url=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%3F_ob%3DGatewayURL%26_origin%3DIRSSSEARCH%26_method%3DcitationSearch%26_piikey%3DS1463500315000530%26_version%3D1%26md5%3D0b900e58ca7983c02b17abbb30b1a401","type":"text/html"}],"origin":{"streamId":"feed/http://rss.sciencedirect.com/publication/science/14635003","title":"ScienceDirect Publication: Ocean Modelling","htmlUrl":"http://www.sciencedirect.com"},"summary":{"content":"Publication date: <br> <b>Source:</b>Ocean Modelling<br> Author(s): Alexander F. Shchepetkin<br><br><br>","direction":"ltr"}};
+</script>
+-->
+	</head>
+	<body>
+		<div class="article-header">
+			<h1><a target="_blank" href="http://rss.sciencedirect.com/action/redirectFile?&zone=main&currentActivity=feed&usageType=outward&url=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%3F_ob%3DGatewayURL%26_origin%3DIRSSSEARCH%26_method%3DcitationSearch%26_piikey%3DS1463500315000530%26_version%3D1%26md5%3D0b900e58ca7983c02b17abbb30b1a401">An Adaptive, Courant-number-dependent Implicit Scheme for Vertical Advection in Oceanic Modeling</a></h1>
+			<p class="source"><a target="_blank" href="http://www.sciencedirect.com">Ocean Modelling</a>
+            </p>
+		</div>
+		<div id="article-body" class="article-body instapaper_body entry-content">
+		<div>
+
+      <div id="frag_2" class="page_fragment" data-fid="2"><hr id="abs_author-highlightsabsh0011" class="artHeader"/><div class="abstract svAbstract &#10;&#9;  abstractHighlights&#10;&#9;  " data-etype="ab"><h2 class="secHeading" id="author-highlightsabsh0011">Highlights</h2><p id="spara0001"/><dl class="listitem" id="list_celist0004"><dt class="label">•</dt><dd><p id="para0028">Adaptive Courant-number dependent weighting between explicit and implicit advection.</p></dd><dt class="label">•</dt><dd><p id="para0029">Fully retains accuracy of best explicit advection schemes when Courant number is small.</p></dd><dt class="label">•</dt><dd><p id="para0030">Extends numerical stability beyond CFL limit, if required by local flow conditions.</p></dd><dt class="label">•</dt><dd><p id="para0031">Useful when vertical advection becomes the most restrictive for choosing time step.</p></dd><dt class="label">•</dt><dd><p id="para0032">Often just few points may hold up the simulation due to extreme local vertical CFL.</p></dd></dl></div><hr id="abs_authorabs00011" class="artHeader"/><div class="abstract svAbstract " data-etype="ab"><h2 class="secHeading" id="authorabs00011">Abstract</h2><p id="spara0002">An oceanic model with an Eulerian vertical coordinate and an explicit vertical advection scheme is subject to the Courant–Friedrichs–Lewy (CFL) limitation. Depending on the horizontal grid spacing, the horizontal-to-vertical grid resolution ratio and the flow pattern this limitation may easily become the most restrictive factor in choosing model time step, with the general tendency to become more severe as horizontal resolution becomes finer. Using terrain-following coordinate makes local vertical grid spacing depend on topography, ultimately resulting in very fine resolution in shallow areas in comparison with other models, <em>z</em>-coordinate, and isopycnic, which adds another factor in restricting time step. At the same time, terrain-following models are models of choice for the fine-resolution coastal modeling, often including tides interacting with topography resulting in large amplitude baroclinic vertical motions. In this article we examine the possibility of mitigating vertical CFL restriction, while at the same time avoiding numerical inaccuracies associated with standard implicit advection schemes. In doing so we design a combined algorithm which acts like a high-order explicit scheme when Courant numbers are small enough to allow explicit method (which is usually the case throughout the entire modeling domain except just few “hot spots”), while at the same time has the ability to adjust itself toward implicit scheme should it became necessary to avoid stability limitations. This is done in a seamless manner by continuously adjusting weighting between explicit and implicit components.</p></div><p id="embeddedPDF"/><p id="SD_BA1P" class="sgfNoTitleBar sgfNoGadgetBorder svDoNotLink"/><h2 id="kwd_1" class="svKeywords">Keywords</h2><ul class="keyword" id="keys0001"><li id="key0002" class="svKeywords"><span id="cetext0001">Expanding numerical stability of oceanic model</span>; </li><li id="key0003" class="svKeywords"><span id="cetext0002">Finite Courant number advection accuracy</span>; </li><li id="key0004" class="svKeywords"><span id="cetext0003">Numerical robustness</span>; </li><li id="key0005" class="svKeywords"><span id="cetext0004">Regional oceanic modeling</span></li></ul><p class="artEcomponent"/><p class="copyright">Copyright © 2015 Elsevier Ltd. All rights reserved.</p><p class="page_fragment_ind" data-id="frag_3"/></div>
+
+               
+
+       
+   
+        
+    </div>
+		</div>
+		<div class="bottom-links">
+			Saved from <a target="_blank" href="http://feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frss.sciencedirect.com%2Fpublication%2Fscience%2F14635003">Ocean Modelling</a> on feedly
+		</div>
+	</body>
+</html>
